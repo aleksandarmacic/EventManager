@@ -1,0 +1,1 @@
+ /Users/aleksandarmacic/Desktop/event_manager_app/.dart_tool/flutter_build/d266e0ae60bb79117164a5a8891ee5dd/native_assets.yaml: 

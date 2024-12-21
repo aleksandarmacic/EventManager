@@ -6,7 +6,13 @@ class EventApi {
   Future<List<EventModel>> getEvents() async {
     await Future.delayed(const Duration(seconds: 2));
     final jsonString = await rootBundle.loadString('assets/events.json');
+    print("ovo je json string");
+    print(jsonString);
+    print("***********");
     final List<dynamic> jsonData = json.decode(jsonString);
-    return jsonData.map((json) => EventModel.fromJson(json)).toList();
+    print("ovo je jsoooooon");
+    print(jsonData);
+    print("################");
+    return jsonData.map((event) => EventModel.fromJson(event)).toList();
   }
 }

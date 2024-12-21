@@ -1,9 +1,15 @@
-
 import 'package:event_manager_app/data/models/event_model.dart';
 
 abstract class EventState {}
 
-class InitialEventState extends EventState {}
+class InitialEventState extends EventState {
+  final List<EventModel> events;
+
+
+  InitialEventState({
+    this.events = const [],
+  });
+}
 
 class EventsLoading extends EventState {}
 
